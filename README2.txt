@@ -1,1 +1,1 @@
-"Some silly nonsense text in it"
+"Hello"
