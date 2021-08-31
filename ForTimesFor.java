@@ -21,4 +21,22 @@ public class ForTimesFor{
         System.out.printf("You got %s correct.\n",correctAnswers);   
         inputReader.close();
     }
+
+    public static int getIntFromUser(Scanner sc, String prompt){
+        int value;
+        do {
+            System.out.printf("Please enter %s: ",prompt);
+            try {
+                value = Integer.parseInt(sc.nextLine());
+                if (value<1){
+                    throw new NumberFormatException();
+                }
+                break;
+ 
+            } catch(NumberFormatException ex) {
+                System.out.println("Please input a correct value.");
+            }
+        }while(true);
+        return value;
+    }
 }
