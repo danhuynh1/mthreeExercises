@@ -5,8 +5,6 @@ public class BirthStones {
         Scanner inputReader = new Scanner(System.in);
         
         int birthMonth = 1;
-        String month = "";
-        String birthStone = "";
 
         do {
             System.out.print("Please enter a month: ");
@@ -22,6 +20,21 @@ public class BirthStones {
             }
         }while(true);
 
+        String[] monthBirthStone = getMonthBirthstone(birthMonth);
+
+        System.out.printf("%s's birthstone is %s.",monthBirthStone[0],monthBirthStone[1]);
+        inputReader.close();
+    }
+
+    /**
+     * Helper method to get strings of a month and birthStone based on a numeric month.
+     * @param birthMonth
+     * @return String array where array[0] is month Name, array[1] is month Birth Stone.
+     */
+    public static String[] getMonthBirthstone(int birthMonth){
+        String[] names = new String[2];
+        String month = "";
+        String birthStone = "";
         switch (birthMonth){
             case 1:
                 month = "January";
@@ -73,8 +86,9 @@ public class BirthStones {
                 break;
         }
 
-        System.out.printf("%s's birthstone is %s",month,birthStone);
-        inputReader.close();
+        names[0] = month;
+        names[1] = birthStone;
+        return names;
     }
 
 }

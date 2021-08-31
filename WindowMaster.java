@@ -8,8 +8,9 @@ public class WindowMaster{
     public static void main(String[] args){
 
         float height, width, areaOfWindow, perimeterOfWindow,cost;
-        int numberOfWindows;
         float GLASSCOST, TRIMCOST;
+        int numberOfWindows;
+
 
 
         Scanner sc = new Scanner(System.in);
@@ -19,8 +20,8 @@ public class WindowMaster{
         TRIMCOST = getFloatFromUser(sc, "Trim Cost");
         height = getFloatFromUser(sc, "Height");
         width = getFloatFromUser(sc, "Width");
-
         numberOfWindows = getIntFromUser(sc, "Windows");
+
         sc.close();
 
         // calculate the area of the window
@@ -34,6 +35,12 @@ public class WindowMaster{
         System.out.printf("Total Cost for %s windows = $%.2f. \n",numberOfWindows,cost);
 
     }
+/**
+ * Helper Method to get proper positive Float from scanner 
+ * @param sc
+ * @param prompt
+ * @return
+ */
 
     public static float getFloatFromUser(Scanner sc, String prompt){
         float value;
@@ -53,7 +60,12 @@ public class WindowMaster{
 
         return value;
     }
-
+/**
+ * Helper Method to get proper positive int from scanner 
+ * @param sc
+ * @param prompt
+ * @return
+ */
     public static int getIntFromUser(Scanner sc, String prompt){
         int value;
         do {

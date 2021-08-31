@@ -7,12 +7,20 @@ public class FieldDay {
         System.out.print("What's your last name? ");
         String name = inputReader.nextLine();
 
+
+        //Prints team found from name using GetTeamFromName method.
         System.out.printf("Aha You're on team \"%s\"!\n",getTeamFromName(name));
         System.out.println("Good luck in the games!");
 
         inputReader.close();
 
     }
+
+    /**
+     * Helper method to get a assigned "Team" from a name comparison.
+     * @param name
+     * @return team
+     */
 
     public static String getTeamFromName(String name){
         String team = "";

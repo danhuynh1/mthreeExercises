@@ -18,7 +18,12 @@ public class StayPositive {
         }
     }
 
-
+/**
+ * Helper method to get proper int input from scanner sc.
+ * @param sc
+ * @param prompt
+ * @return
+ */
     public static int getIntFromUser(Scanner sc, String prompt){
         int value;
         do {

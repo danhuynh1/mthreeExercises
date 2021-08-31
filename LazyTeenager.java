@@ -2,7 +2,7 @@ import java.util.Random;
 public class LazyTeenager {
 
     public static void main(String[] args){
-        //Initialize input
+        //Initialize variables
         int count = 1;
         int max = 100;
         int min = 10;
@@ -31,7 +31,7 @@ public class LazyTeenager {
                 cleanPossibility+=10;
             
             //They have cleaned the room.
-            }else{
+            }else{ //Random Number cleanChance <= cleanPossibility
                 System.out.println("FINE! I'LL CLEAN MY ROOM. BUT I REFUSE TO EAT MY PEAS.");
                 isClean = true;
                 break;

@@ -60,6 +60,10 @@ public class TriviaNight {
     }
 
 
+
+    // public static TriviaNight[] initializeBasicQuestions(){
+        
+    // }
     /**
      * Helper method to print a string array.
      * @param questions
