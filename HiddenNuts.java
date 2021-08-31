@@ -9,16 +9,17 @@ public class HiddenNuts {
         hidingSpots[squirrel.nextInt(hidingSpots.length)] = "Nut";
         System.out.println("The nut has been hidden ...");
 
-
-        for (int i = 0; i < hidingSpots.length;i++){
-            if (hidingSpots[i]!= null){
-                System.out.printf("Found it! It's in spot# %d",i);
+        int spotCount = 0;
+        for (String spot: hidingSpots){
+            if ("Nut".equals(spot)){
+                System.out.printf("Found it! It's in spot# %d\n",spotCount);
                 break;
-
             }
+            spotCount++;
         }
 
-        // Nut finding code should go here! 
+        System.out.println(java.util.Arrays.asList(hidingSpots).indexOf("Nut"));
+
     }
 
 }

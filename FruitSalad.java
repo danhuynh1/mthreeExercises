@@ -14,13 +14,13 @@ public class FruitSalad {
         int appleCount = 0;
         int orangeCount =0;
 
-
         for (String f :fruit){
-            // if (f.equalsIgnoreCase("fruit")){
-            //     System.out.println(f);
-            // }
 
-            if (f.toLowerCase().contains("apple")){
+            if (f.toLowerCase().contains("berry")){
+                    fruitSalad.add(f);
+            }
+       
+            else if (f.toLowerCase().contains("apple")){
                 // apples.add(f);
                 if (appleCount != 3){
                     fruitSalad.add(f);
@@ -39,12 +39,13 @@ public class FruitSalad {
                     fruitSalad.add(f);
                 }
             }
+
             if (fruitSalad.size() == 12){
                 break;
             }
         }
 
-        
+
 
 
         // System.out.println("")
