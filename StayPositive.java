@@ -17,6 +17,8 @@ public class StayPositive {
             startVal--;
         }
     }
+
+
     public static int getIntFromUser(Scanner sc, String prompt){
         int value;
         do {

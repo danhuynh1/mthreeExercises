@@ -14,6 +14,7 @@ public class WindowMaster{
 
         Scanner sc = new Scanner(System.in);
 
+        // get input for values for calculations.
         GLASSCOST = getFloatFromUser(sc, "Glass cost");
         TRIMCOST = getFloatFromUser(sc, "Trim Cost");
         height = getFloatFromUser(sc, "Height");
