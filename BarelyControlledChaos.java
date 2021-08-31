@@ -40,7 +40,7 @@ public class BarelyControlledChaos {
 
     public static String getRandomAnimal(){
         String[] animals = {"Dog","Cat","Cow","Monkey","Rhino"};
-        int randomAnimalIndex = new Random().nextInt(animals.length + 1);
+        int randomAnimalIndex = new Random().nextInt(animals.length);
         return animals[randomAnimalIndex];
 
     }
