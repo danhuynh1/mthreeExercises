@@ -19,6 +19,6 @@ public class ForTimesFor{
 
         }
         System.out.printf("You got %s correct.\n",correctAnswers);   
-
+        inputReader.close();
     }
 }
